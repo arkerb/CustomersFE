@@ -1,5 +1,11 @@
 # CustomersFE
 
+Before running the application make sure to have NodeJS installed.
+
+Before running the web application run `npm install`.
+
+Then run `ng serve` from the terminal
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
 ## Development server

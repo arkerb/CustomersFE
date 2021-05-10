@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Username</th>
+            <th scope="col">Password</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let customer of customers">
+            <th scope="row">{{customer.id}}</th>
+            <td>{{customer.firstName}}</td>
+            <td>{{customer.lastName}}</td>
+            <td>{{customer.dateOfBirth}}</td>
+            <td>{{customer.username}}</td>
+            <td>{{customer.password}}</td>
+            <td>
+              <a type="button" class="btn btn-primary" [routerLink]="['/customers', customer.id]">Edit</a>
+              <button type="button" class="btn btn-danger float-right" (click)='deleteCustomer(customer.id)'>Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <a type="button" class="btn btn-secondary" [routerLink]="['/customers/new']">Create New Customer</a>
+</div>
+
+z
+
+
